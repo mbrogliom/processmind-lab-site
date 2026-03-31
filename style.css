@@ -1,0 +1,106 @@
+:root{
+  --bg:#ffffff;
+  --bg-soft:#f7f9fc;
+  --line:#e7edf5;
+  --text:#1a2438;
+  --muted:#5d6c86;
+  --accent:#1e78ff;
+  --accent-2:#23bfa5;
+  --shadow:0 14px 40px rgba(17,31,59,.08);
+  --max:1180px;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:'Outfit',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
+
+.container{
+  width:min(var(--max),calc(100% - 32px));
+  margin:0 auto;
+}
+
+.topbar{
+  position:sticky;
+  top:0;
+  background:#fff;
+  border-bottom:1px solid var(--line);
+}
+
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:16px 0;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.logo img{
+  height:50px;
+}
+
+nav a{
+  margin-left:18px;
+  color:var(--muted);
+  text-decoration:none;
+}
+
+nav a:hover{
+  color:var(--text);
+}
+
+.hero{
+  padding:80px 0;
+}
+
+h1{
+  font-size:42px;
+  margin-bottom:20px;
+}
+
+.lead{
+  color:var(--muted);
+  margin-bottom:20px;
+}
+
+.btn{
+  padding:12px 20px;
+  border-radius:10px;
+  text-decoration:none;
+}
+
+.btn-primary{
+  background:var(--accent);
+  color:#fff;
+}
+
+.btn-secondary{
+  border:1px solid var(--line);
+}
+
+section{
+  padding:60px 0;
+}
+
+.card{
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:20px;
+  margin-bottom:20px;
+}
+
+footer{
+  padding:30px 0;
+  border-top:1px solid var(--line);
+  color:var(--muted);
+}
