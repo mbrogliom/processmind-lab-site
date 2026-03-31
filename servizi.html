@@ -1,74 +1,91 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Servizi | ProcessMind Lab</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProcessMind Lab | Servizi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-<header class="topbar">
-  <div class="container nav">
-    <div class="logo">
-      <img src="logo.png">
-      <strong>ProcessMind Lab</strong>
+  <header class="topbar">
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <img src="logo.png" alt="ProcessMind Lab logo">
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="chi-siamo.html">Chi siamo</a>
+        <a class="active" href="servizi.html">Servizi</a>
+        <a href="prodotti.html">Prodotti</a>
+        <a href="contatti.html">Contatti</a>
+      </nav>
     </div>
+  </header>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="chi-siamo.html">Chi siamo</a>
-      <a href="servizi.html">Servizi</a>
-      <a href="prodotti.html">Prodotti</a>
-      <a href="contatti.html">Contatti</a>
-    </nav>
-  </div>
-</header>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Servizi</h1>
+        <p class="lead">Servizi pensati per aiutare imprese, studi professionali e organizzazioni a rendere più semplici i processi interni e più accessibili le informazioni.</p>
+      </div>
+    </section>
 
-<section>
-  <div class="container">
-    <h1>Servizi</h1>
+    <section>
+      <div class="container">
+        <div class="page-banner" style="margin-bottom:22px;">
+          <img src="mockup-services.png" alt="Servizi ProcessMind Lab">
+        </div>
+      </div>
+    </section>
 
-    <p class="lead">
-      Aiutiamo aziende e professionisti a migliorare i processi e utilizzare al meglio dati e documenti.
-    </p>
+    <section class="band">
+      <div class="container grid-3">
+        <article class="card">
+          <div class="icon">◎</div>
+          <h3>Analisi dei processi</h3>
+          <p>Analizziamo workflow, documenti e flussi informativi per individuare inefficienze, attività manuali e opportunità di miglioramento.</p>
+          <ul class="clean">
+            <li>Mappatura dei processi</li>
+            <li>Analisi documentale</li>
+            <li>Roadmap di semplificazione</li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="icon">↺</div>
+          <h3>Automazione operativa</h3>
+          <p>Progettiamo automazioni che aiutano a ridurre attività ripetitive, passaggi manuali e tempi di lavorazione.</p>
+          <ul class="clean">
+            <li>Workflow documentali</li>
+            <li>Automazione reporting</li>
+            <li>Integrazione dati e strumenti</li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="icon">✦</div>
+          <h3>Soluzioni AI e software</h3>
+          <p>Sviluppiamo strumenti intelligenti per interrogare documenti, recuperare conoscenza interna e supportare il lavoro quotidiano.</p>
+          <ul class="clean">
+            <li>Assistenti documentali</li>
+            <li>Knowledge systems</li>
+            <li>Prototipi software su misura</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
 
-    <div class="card">
-      <h3>Analisi dei processi</h3>
-      <p>
-        Studiamo il funzionamento delle attività aziendali per individuare inefficienze,
-        colli di bottiglia e opportunità di miglioramento.
-      </p>
+  <footer>
+    <div class="container footer-wrap">
+      <div>© <span id="year"></span> ProcessMind Lab</div>
+      <div class="small-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="cookie.html">Cookie Policy</a>
+      </div>
     </div>
-
-    <div class="card">
-      <h3>Automazione</h3>
-      <p>
-        Progettiamo soluzioni che riducono il lavoro manuale e rendono i processi più veloci e affidabili.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Soluzioni AI</h3>
-      <p>
-        Sviluppiamo strumenti intelligenti per interrogare documenti, recuperare informazioni
-        e supportare il lavoro quotidiano.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<footer>
-  <div class="container">
-    © 2026 ProcessMind Lab |
-    <a href="privacy.html">Privacy</a> |
-    <a href="cookie.html">Cookie</a>
-  </div>
-</footer>
-
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
