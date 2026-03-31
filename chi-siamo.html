@@ -1,67 +1,68 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chi siamo | ProcessMind Lab</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProcessMind Lab | Chi siamo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-<header class="topbar">
-  <div class="container nav">
-    <div class="logo">
-      <img src="logo.png">
-      <strong>ProcessMind Lab</strong>
+  <header class="topbar">
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <img src="logo.png" alt="ProcessMind Lab logo">
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a class="active" href="chi-siamo.html">Chi siamo</a>
+        <a href="servizi.html">Servizi</a>
+        <a href="prodotti.html">Prodotti</a>
+        <a href="contatti.html">Contatti</a>
+      </nav>
     </div>
+  </header>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="chi-siamo.html">Chi siamo</a>
-      <a href="servizi.html">Servizi</a>
-      <a href="prodotti.html">Prodotti</a>
-      <a href="contatti.html">Contatti</a>
-    </nav>
-  </div>
-</header>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Chi siamo</h1>
+        <p class="lead">ProcessMind Lab nasce per aiutare aziende e organizzazioni a semplificare processi, valorizzare documenti e usare il software in modo più utile e intelligente.</p>
+      </div>
+    </section>
 
-<section>
-  <div class="container">
-    <h1>Chi siamo</h1>
+    <section>
+      <div class="container">
+        <div class="page-banner" style="margin-bottom:22px;">
+          <img src="mockup-about.png" alt="Team e consulenza ProcessMind Lab">
+        </div>
+        <div class="grid-2">
+          <div class="card">
+            <h3>Il nostro approccio</h3>
+            <p>Lavoriamo partendo dai problemi reali delle organizzazioni: documenti difficili da consultare, attività ripetitive, informazioni distribuite in più sistemi, processi lenti o poco chiari.</p>
+            <p>Da qui progettiamo soluzioni pratiche che combinano architettura software, automazione e intelligenza artificiale per migliorare l’efficienza e la qualità del lavoro.</p>
+          </div>
+          <div class="card">
+            <h3>Il fondatore</h3>
+            <p>ProcessMind Lab è guidata da <strong>Marco Montani</strong>, professionista IT con una lunga esperienza nella progettazione di sistemi informativi, integrazione software, gestione dei dati e digitalizzazione dei processi.</p>
+            <p>L’esperienza maturata in industria, logistica, sanità e servizi viene oggi applicata alla creazione di strumenti moderni per l’organizzazione del lavoro e l’accesso intelligente alle informazioni.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <p class="lead">
-      ProcessMind Lab nasce per aiutare aziende e organizzazioni a semplificare il lavoro attraverso software e intelligenza artificiale.
-    </p>
-
-    <div class="card">
-      <h3>Approccio</h3>
-      <p>
-        Lavoriamo partendo dai problemi reali: documenti difficili da gestire, processi complessi e attività ripetitive.
-        Progettiamo soluzioni concrete che rendono il lavoro più semplice ed efficiente.
-      </p>
+  <footer>
+    <div class="container footer-wrap">
+      <div>© <span id="year"></span> ProcessMind Lab</div>
+      <div class="small-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="cookie.html">Cookie Policy</a>
+      </div>
     </div>
-
-    <div class="card">
-      <h3>Esperienza</h3>
-      <p>
-        Il progetto è guidato da Marco Montani, con oltre 40 anni di esperienza nella progettazione di sistemi informativi,
-        integrazione software e gestione dei dati in ambito industria, logistica, sanità e servizi.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<footer>
-  <div class="container">
-    © 2026 ProcessMind Lab |
-    <a href="privacy.html">Privacy</a> |
-    <a href="cookie.html">Cookie</a>
-  </div>
-</footer>
-
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
