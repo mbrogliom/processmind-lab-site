@@ -1,73 +1,76 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Prodotti | ProcessMind Lab</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProcessMind Lab | Prodotti</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-<header class="topbar">
-  <div class="container nav">
-    <div class="logo">
-      <img src="logo.png" alt="ProcessMind Lab logo">
-      <strong>ProcessMind Lab</strong>
+  <header class="topbar">
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <img src="logo.png" alt="ProcessMind Lab logo">
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="chi-siamo.html">Chi siamo</a>
+        <a href="servizi.html">Servizi</a>
+        <a class="active" href="prodotti.html">Prodotti</a>
+        <a href="contatti.html">Contatti</a>
+      </nav>
     </div>
+  </header>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="chi-siamo.html">Chi siamo</a>
-      <a href="servizi.html">Servizi</a>
-      <a href="prodotti.html">Prodotti</a>
-      <a href="contatti.html">Contatti</a>
-    </nav>
-  </div>
-</header>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Prodotti</h1>
+        <p class="lead">Prodotti orientati alla gestione intelligente dei documenti, all’accesso alla conoscenza aziendale e al miglioramento dei processi interni.</p>
+      </div>
+    </section>
 
-<section>
-  <div class="container">
-    <h1>Prodotti</h1>
+    <section>
+      <div class="container">
+        <div class="page-banner" style="margin-bottom:22px;">
+          <img src="mockup-products.png" alt="Prodotti ProcessMind Lab">
+        </div>
+        <div class="grid-2">
+          <div class="card">
+            <h3>ProcessMind Assistant</h3>
+            <p>Assistente AI che consente di interrogare documenti aziendali in linguaggio naturale. Contratti, report, procedure e documentazione tecnica diventano più facili da consultare e utilizzare.</p>
+            <ul class="clean">
+              <li>Caricamento e indicizzazione documenti</li>
+              <li>Ricerca semantica</li>
+              <li>Risposte con riferimenti alle fonti</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Soluzioni verticali</h3>
+            <p>Accanto al prodotto principale, ProcessMind Lab sviluppa strumenti specifici per supportare processi operativi, gestione documentale, reportistica e organizzazione della conoscenza.</p>
+            <ul class="clean">
+              <li>Assistenti per documenti interni</li>
+              <li>Automazioni per processi ricorrenti</li>
+              <li>Dashboard e strumenti informativi</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <p class="lead">
-      ProcessMind Lab sviluppa strumenti software orientati alla gestione intelligente di documenti, informazioni e processi.
-    </p>
-
-    <div class="card">
-      <h3>ProcessMind Assistant</h3>
-      <p>
-        Assistente AI progettato per consentire alle organizzazioni di interrogare documenti aziendali in linguaggio naturale.
-        Contratti, report, procedure e documentazione tecnica diventano più facili da consultare e utilizzare.
-      </p>
-      <ul>
-        <li>caricamento documenti</li>
-        <li>indicizzazione intelligente</li>
-        <li>ricerca semantica</li>
-        <li>risposte con riferimenti alle fonti</li>
-      </ul>
+  <footer>
+    <div class="container footer-wrap">
+      <div>© <span id="year"></span> ProcessMind Lab</div>
+      <div class="small-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="cookie.html">Cookie Policy</a>
+      </div>
     </div>
-
-    <div class="card">
-      <h3>Soluzioni verticali</h3>
-      <p>
-        Accanto al prodotto principale, sviluppiamo strumenti specifici per supportare automazione, reportistica,
-        organizzazione documentale e accesso rapido alla conoscenza interna.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<footer>
-  <div class="container">
-    © 2026 ProcessMind Lab |
-    <a href="privacy.html">Privacy</a> |
-    <a href="cookie.html">Cookie</a>
-  </div>
-</footer>
-
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
